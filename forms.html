@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+   
+   
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="grey-text">Forms</h1>
+        <form>
+            <div class="input-field">
+                <input type="text" class="datepicker">
+                <label for="date">Choose a Date</label>
+            </div>
+            <div class="input-field">
+                <input type="text" class="timepicker">
+                <label for="timepicker">Choose a Time</label>
+            </div>
+        </form>
+        
+    </div>
+
+
+    
+
+
+
+    <!--Jqeury CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+    $('.timepicker').timepicker();
+  });
+</script>
+
+
+<script>
+    $(document).ready(function(){
+    $('.datepicker').datepicker({
+        autoClose: false,
+        yearRange: 50
+        
+    });
+  });
+</script>
+
+</body>
+</html>
